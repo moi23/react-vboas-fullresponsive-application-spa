@@ -15,7 +15,6 @@ const ContainerNav = styled.nav`
     font-weight: 600;
   }
   margin: auto 100px auto 100px;
-  height: 100px;
   /* background: red; */
 
   #section_nav {
@@ -79,6 +78,11 @@ const ContainerNav = styled.nav`
   /*****************************************/
 
   @media screen and (min-width: 1200px) {
+  }
+
+  /* CELULARES 590 ATÉ 300 */
+  @media only screen and (max-width: 590px) {
+    display: none;
   }
 `;
 
