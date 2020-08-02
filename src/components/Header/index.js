@@ -1,10 +1,15 @@
 import React from "react";
 import ContainerHeader from "./styles";
+import "@brainhubeu/react-carousel/lib/style.css";
+import Carousel, { autoplayPlugin } from "@brainhubeu/react-carousel";
+
 import LogoVboas from "./../../assets/LogoVboasWhite.png";
 import LogoVboasWhite from "./../../assets/vboas_slogan_white.png";
 import LogoWhatsapp from "./../../assets/WhatsLogo.png";
-import Carousel, { autoplayPlugin } from "@brainhubeu/react-carousel";
-import "@brainhubeu/react-carousel/lib/style.css";
+
+import LinkWhats from "./../../assets/linkWhats.png";
+import LinkMessenger from "./../../assets/linkMsg.png";
+import LinkTell from "./../../assets/linkTell.png";
 
 import Item1 from "../../assets/SHOP_CAMA.png";
 import Item2 from "../../assets/SHOP_CAMA2.png";
@@ -79,6 +84,21 @@ const Header = () => {
                 </a>
               </div>
             </Carousel>
+          </div>
+          <div id="sect_mobile_social_links">
+            <a href="https://api.whatsapp.com/send?phone=5515997022806&text=Ol%C3%A1%2C%20Vim%20pelo%20site%20VBOAS%20tenho%20interesse%20em%20realizar%20uma%20compra!">
+              <img
+                src={LinkWhats}
+                id="logoWhats"
+                alt="Link para Whatsapp Mobile"
+              />
+            </a>
+            <a href="http://m.me/moises.miranda.52/">
+              <img src={LinkMessenger} id="logoMessenger" alt="" />
+            </a>
+            <a href="tel:15997022806">
+              <img src={LinkTell} id="logoTelefone" alt="" />
+            </a>
           </div>
         </div>
         <div className="sect_desktop">

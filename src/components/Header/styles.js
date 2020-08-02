@@ -40,6 +40,10 @@ const ContainerHeader = styled.header`
     display: none;
   }
 
+  #sect_mobile_social_links {
+    display: none;
+  }
+
   /* CELULARES 590 ATÉ 300 */
   @media only screen and (max-width: 849px) {
     .sect_main_header {
@@ -130,6 +134,27 @@ const ContainerHeader = styled.header`
             transition: 0.3s;
           }
         }
+      }
+    }
+
+    #sect_mobile_social_links {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+
+      #logoWhats {
+        height: auto;
+        width: 80px;
+      }
+      #logoMessenger {
+        height: auto;
+        width: 80px;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      #logoTelefone {
+        height: auto;
+        width: 80px;
       }
     }
   }
@@ -243,7 +268,7 @@ const ContainerHeader = styled.header`
   /* SECTION NOTEBOOK 1920 X 1080 */
   @media only screen and (min-width: 1440px) {
     .sect_main_header {
-      height: 88vh;
+      height: 1050px;
       background-image: url(${backgroundHeader});
       background-repeat: no-repeat;
       background-size: cover;
@@ -296,7 +321,7 @@ const ContainerHeader = styled.header`
   /* SECTION NOTEBOOK 1440 X 900 */
   @media only screen and (min-width: 1440px) {
     .sect_main_header {
-      height: 88vh;
+      height: 900px;
       background-image: url(${backgroundHeader});
       background-repeat: no-repeat;
       background-size: cover;
@@ -349,7 +374,7 @@ const ContainerHeader = styled.header`
   /* SECTION NOTEBOOK 1024 x 768 */
   @media only screen and (min-width: 1024px) {
     .sect_main_header {
-      height: 88vh;
+      height: 768px;
       background-image: url(${backgroundHeader});
       background-repeat: no-repeat;
       background-size: cover;
@@ -399,10 +424,10 @@ const ContainerHeader = styled.header`
     }
   }
 
-  /* SECTION NOTEBOOK 2 PRA MENOS */
+  /* SECTION 850px */
   @media only screen and (min-width: 850px) {
     .sect_main_header {
-      height: 88vh;
+      height: 768px;
       background-image: url(${backgroundHeader});
       background-repeat: no-repeat;
       background-size: cover;
@@ -451,59 +476,6 @@ const ContainerHeader = styled.header`
       }
     }
   }
-
-  /* SECTION NOTEBOOK 2 PRA MENOS */
-  /* @media only screen and (max-width: 850px) {
-    .sect_main_header {
-      height: 88vh;
-      background-image: url(${backgroundHeader});
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    .sect_desktop {
-      margin-left: 98px;
-      padding-top: 115px;
-      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-      p {
-        color: white;
-        font-size: 24px;
-        font-weight: 100;
-        padding-bottom: 20px;
-      }
-      h1 {
-        color: white;
-        font-size: 51px;
-        font-weight: 100;
-        padding-bottom: 20px;
-      }
-      h2 {
-        color: white;
-        font-size: 30px;
-        font-weight: lighter;
-        font-family: "Roboto", sans-serif;
-      }
-      button {
-        height: 85px;
-        width: 333px;
-        background: #00b725;
-        border-radius: 20px;
-        border: solid 5px white;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        a {
-          color: white;
-          font-size: 36px;
-          text-transform: uppercase;
-          letter-spacing: 4px;
-        }
-      }
-
-      img {
-        width: 336px;
-      }
-    }
-  } */
 `;
 
 export default ContainerHeader;
