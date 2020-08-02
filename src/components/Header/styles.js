@@ -41,10 +41,12 @@ const ContainerHeader = styled.header`
   }
 
   /* CELULARES 590 ATÉ 300 */
-  @media only screen and (max-width: 590px) {
-    height: 100vh;
-    background-size: cover;
-    background-position-x: -88px;
+  @media only screen and (max-width: 849px) {
+    .sect_main_header {
+      height: 100vh;
+      background-size: cover;
+      background-position-x: -88px;
+    }
 
     .sect_desktop {
       display: none;
@@ -396,6 +398,112 @@ const ContainerHeader = styled.header`
       }
     }
   }
+
+  /* SECTION NOTEBOOK 2 PRA MENOS */
+  @media only screen and (min-width: 850px) {
+    .sect_main_header {
+      height: 88vh;
+      background-image: url(${backgroundHeader});
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .sect_desktop {
+      margin-left: 98px;
+      padding-top: 115px;
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+      p {
+        color: white;
+        font-size: 24px;
+        font-weight: 100;
+        padding-bottom: 20px;
+      }
+      h1 {
+        color: white;
+        font-size: 51px;
+        font-weight: 100;
+        padding-bottom: 20px;
+      }
+      h2 {
+        color: white;
+        font-size: 30px;
+        font-weight: lighter;
+        font-family: "Roboto", sans-serif;
+      }
+      button {
+        height: 85px;
+        width: 333px;
+        background: #00b725;
+        border-radius: 20px;
+        border: solid 5px white;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        a {
+          color: white;
+          font-size: 36px;
+          text-transform: uppercase;
+          letter-spacing: 4px;
+        }
+      }
+
+      img {
+        width: 336px;
+      }
+    }
+  }
+
+  /* SECTION NOTEBOOK 2 PRA MENOS */
+  /* @media only screen and (max-width: 850px) {
+    .sect_main_header {
+      height: 88vh;
+      background-image: url(${backgroundHeader});
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .sect_desktop {
+      margin-left: 98px;
+      padding-top: 115px;
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+      p {
+        color: white;
+        font-size: 24px;
+        font-weight: 100;
+        padding-bottom: 20px;
+      }
+      h1 {
+        color: white;
+        font-size: 51px;
+        font-weight: 100;
+        padding-bottom: 20px;
+      }
+      h2 {
+        color: white;
+        font-size: 30px;
+        font-weight: lighter;
+        font-family: "Roboto", sans-serif;
+      }
+      button {
+        height: 85px;
+        width: 333px;
+        background: #00b725;
+        border-radius: 20px;
+        border: solid 5px white;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        a {
+          color: white;
+          font-size: 36px;
+          text-transform: uppercase;
+          letter-spacing: 4px;
+        }
+      }
+
+      img {
+        width: 336px;
+      }
+    }
+  } */
 `;
 
 export default ContainerHeader;
